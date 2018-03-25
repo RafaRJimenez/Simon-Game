@@ -1,0 +1,45 @@
+.container {
+	border: 1px solid black;
+	margin: 50px auto;
+	width: 400px;
+	height: 400px;
+}
+
+.green, .red, .yellow, .blue {
+	width: 50%;
+	height: 50%;
+	float: left;
+	opacity: 1;
+	/*transition: opacity, 2s ease-in-out;*/
+	/*transition: background-color, 2s ease-in-out;*/
+}
+
+/*.green:hover, .red:hover , .yellow:hover, .blue:hover {
+	opacity: 0.2;
+}*/
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.memorize {
+	animation: fadeIt 1s ease-in-out; 
+}
+
+@keyframes fadeIt {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
