@@ -7,6 +7,7 @@ var red = $(".red");
 var green = $(".green");
 var yellow = $(".yellow");
 var blue = $(".blue");
+var counter = $(".counter");
 saveColor();
 function saveColor(){
 			var number = Math.floor(Math.random() * 8);
@@ -45,17 +46,20 @@ function addColor(e){
 		counterTimes = 0 ;
 	}
 	else if (arrayColors.length === playerColors.length){
+		alert("Next Round!");
 		while(playerColors.length > 0) {
    			 playerColors.pop();
 			}
 		counterTimes = 0;
 		saveColor();
 	} else {
-	++counterTimes;
+		++counterTimes;
 	}
 }
 
 function showColors(){
+  counter.text(arrayColors.length);
+  $(".counter").fadeIn();
   var i = 0;
   var moves = setInterval(function(){
     var color = arrayColors[i];

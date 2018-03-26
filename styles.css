@@ -1,15 +1,22 @@
+body {
+	background-color: #000;
+	font-family: arial;
+}
+
+
 .container {
 	border: 1px solid black;
-	margin: 50px auto;
+	margin: 70px auto;
 	width: 400px;
 	height: 400px;
 }
 
 .green, .red, .yellow, .blue {
-	width: 50%;
-	height: 50%;
-	float: left;
+	width: 150px;
+	height: 150px;
+	/*float: left;*/
 	opacity: 1;
+	 border-radius: 50%;
 	/*transition: opacity, 2s ease-in-out;*/
 	/*transition: background-color, 2s ease-in-out;*/
 }
@@ -19,23 +26,34 @@
 }*/
 
 .green {
-	background-color: green;
+	background-color: #29BF12;
+	margin: -45px auto ;
 }
 
 .red {
-	background-color: red;
+	background-color: #F21B3F;
+	margin: 100px 0px 0px -75px;
 }
 
 .yellow {
-	background-color: yellow;
+	background-color: #fff44f;
+	margin: -148px 24px -9px 327px;
 }
 
 .blue {
-	background-color: blue;
+	background-color: #08BDBD;
+	margin: 50px auto;
 }
 
 .memorize {
 	animation: fadeIt 1s ease-in-out; 
+}
+
+.counter {
+	position: absolute;
+	color: white;
+	font-size: 55px;
+	margin: -330px 190px;
 }
 
 @keyframes fadeIt {
